@@ -1,0 +1,27 @@
+.inside-slider {
+  &__navigation {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 40px;
+    gap: 38px;
+  }
+  .swiper-slide {
+    height: auto;
+  }
+  &__arrow {
+    width: 32px;
+    position: static;
+    svg {
+      fill: #fda31b;
+    }
+    &.swiper-button-disabled {
+      svg {
+        fill: #c2c2c2;
+      }
+    }
+    &:before,
+    &::after {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+:root {
+  --container-width: 1265px;
+  --container-padding: 15px;
+
+  --font-main: "Frutiger", sans-serif;
+
+  --text-color: #000;
+  --color-green: #028103;
+  --color-yellow: #fba119;
+  --color-line-gradient: linear-gradient(90deg, #ffffff 50%, #e72818 51.92%);
+  --color-bg: #fcf5ee;
+  --color-light-grey: #ebebec;
+  --color-dark-grey: #585858;
+  --color-grey: #aaaaaa;
+  --color-header-grey: #6d6d6d;
+}
+$vp-320: 320px;
+$vp-375: 375px;
+$vp-500: 500px;
+$vp-768: 768px;
+$vp-1024: 1024px;
+$vp-1280: 1280px;
+$vp-1440: 1440px;
+$vp-1920: 1920px;

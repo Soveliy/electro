@@ -1,0 +1,76 @@
+.header {
+  margin-bottom: 25px;
+  &-top {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 6px 0;
+  }
+  &-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    &-item {
+      a {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 10px;
+      }
+      span {
+        color: var(--color-header-grey);
+        height: 18px;
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        font-weight: 400;
+        svg {
+          height: 18px;
+        }
+      }
+      &.btn {
+        a {
+          background-color: var(--color-yellow);
+          height: 40px;
+          padding: 0 20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 4px;
+          span {
+            color: var(--text-color);
+          }
+        }
+      }
+    }
+  }
+
+  &-bottom {
+    background-color: var(--color-header-grey);
+    &-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      margin: -25px 0;
+    }
+    .phone-number {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      a {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 400;
+      }
+      span {
+        font-weight: 300;
+        font-size: 13px;
+        color: #fff;
+      }
+    }
+  }
+}

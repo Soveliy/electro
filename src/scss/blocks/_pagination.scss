@@ -1,0 +1,36 @@
+.pagination {
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  &__arrow {
+    display: block;
+    height: 22px;
+    width: 22px;
+    svg {
+      height: 100%;
+      width: 100%;
+      fill: #c2c2c2;
+    }
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  &__link {
+    font-size: 18px;
+    line-height: 122%;
+    text-align: center;
+    color: #6d6d6d;
+    transition: 0.3s;
+    &--current {
+      color: #028103;
+    }
+    @include hover {
+      color: #028103;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "Frutiger";
+  src: url("Frutiger LT Std 57 Condensed.otf");
+  src: local("Frutiger LT Std 57 Condensed"),
+    local("Frutiger LT Std 57 Condensed"),
+    url("Frutiger LT Std 57 Condensed.otf") format("otf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Frutiger";
+  src: url("Frutiger LT Std 65 Bold.otf");
+  src: local("Frutiger LT Std 65 Bold"), local("Frutiger LT Std 65 Bold"),
+    url("Frutiger LT Std 65 Bold.otf") format("otf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Frutiger";
+  src: url("Frutiger LT Std 45 Light.otf");
+  src: local("Frutiger LT Std 45 Light"), local("Frutiger LT Std 45 Light"),
+    url("Frutiger LT Std 45 Light.otf") format("otf");
+  font-weight: 300;
+  font-style: normal;
+}
