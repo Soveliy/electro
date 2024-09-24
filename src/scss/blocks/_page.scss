@@ -80,3 +80,9 @@ body {
     }
   }
 }
+
+.other-block {
+  @include vp-500 {
+    margin-top: 50px;
+  }
+}
