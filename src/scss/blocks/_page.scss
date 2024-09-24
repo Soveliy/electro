@@ -63,16 +63,20 @@ body {
     [data-tab="people"] {
       display: block;
     }
-    .header__login--people {
-      display: flex;
+    @include vp-768() {
+      .header__login--people {
+        display: flex;
+      }
     }
   }
   &.js-bussines {
     [data-tab="bussines"] {
       display: block;
     }
-    .header__login--bussines {
-      display: flex;
+    @include vp-768() {
+      .header__login--bussines {
+        display: flex;
+      }
     }
   }
 }
