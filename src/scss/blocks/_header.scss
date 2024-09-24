@@ -1,16 +1,30 @@
 .header {
   margin-bottom: 25px;
+  &__login {
+    display: none;
+    @include vp-768() {
+      align-items: center;
+      margin-left: auto;
+      margin-right: 20px;
+    }
+  }
   &-top {
     display: flex;
     justify-content: end;
     align-items: center;
     padding: 6px 0;
+    @include vp-768 {
+      padding: 10px 0;
+    }
   }
   &-links {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 15px;
+    @include vp-768 {
+      display: none;
+    }
     &-item {
       a {
         display: flex;
@@ -47,6 +61,7 @@
   }
 
   &-bottom {
+    position: relative;
     background-color: var(--color-header-grey);
     &-inner {
       display: flex;
@@ -54,6 +69,8 @@
       align-items: center;
     }
     .logo {
+      position: relative;
+      z-index: 7000;
       margin: -25px 0;
     }
     .phone-number {
@@ -61,6 +78,9 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      @include vp-768 {
+        display: none;
+      }
       a {
         color: #fff;
         font-size: 18px;
@@ -70,6 +90,13 @@
         font-weight: 300;
         font-size: 13px;
         color: #fff;
+      }
+    }
+    .container {
+      @include vp-768 {
+        position: relative;
+        z-index: 7000;
+        background-color: var(--color-header-grey);
       }
     }
   }

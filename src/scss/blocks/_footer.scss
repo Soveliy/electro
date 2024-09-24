@@ -2,11 +2,20 @@
   background-color: var(--color-dark-grey);
   padding-top: 75px;
   padding-bottom: 35px;
+  @include vp-500() {
+    padding: 30px 0 15px;
+  }
   &-inner {
     margin-bottom: 50px;
     display: grid;
     grid-template-columns: 350px 1fr;
     grid-gap: 90px;
+    @include vp-768 {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      margin-bottom: 40px;
+    }
     &-left {
       display: flex;
       flex-direction: column;
@@ -30,16 +39,63 @@
     &-right {
       display: flex;
       justify-content: space-between;
+      @include vp-1024() {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+      }
+      @include vp-500 {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+      .list-title {
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        transition: 0.3s;
+        .icon {
+          display: none;
+        }
+        @include vp-500 {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          margin-bottom: 0;
+          &.js-active {
+            margin-bottom: 10px;
+            .icon {
+              transform: rotate(180deg);
+            }
+          }
+          .icon {
+            transition: 0.3s;
+            height: 16px;
+            width: 16px;
+            display: block;
+          }
+        }
+      }
       ul {
         display: flex;
         flex-direction: column;
         gap: 10px;
-        .list-title {
-          color: #fff;
-          text-transform: uppercase;
-          font-size: 14px;
-          font-weight: 700;
-          margin-bottom: 10px;
+        @include vp-500() {
+          opacity: 0;
+          max-height: 0;
+          position: relative;
+          overflow: hidden;
+          transform: translateY(-10px);
+          pointer-events: none;
+          transition: 0.3s;
+          &.js-active {
+            opacity: 1;
+            max-height: 500px;
+            transform: none;
+            opacity: 1;
+            pointer-events: all;
+          }
         }
         li {
           color: #c4c4c4;
@@ -55,6 +111,12 @@
     align-items: center;
     padding-top: 30px;
     border-top: 1px solid #717171;
+    @include vp-500() {
+      padding-top: 15px;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
     span,
     a {
       color: #969696;
@@ -64,6 +126,39 @@
     }
     span {
       text-transform: uppercase;
+    }
+  }
+}
+
+.text-wrapper {
+  &--desk {
+    @include vp-768 {
+      display: none;
+    }
+  }
+  &--mobile {
+    display: none;
+    @include vp-768 {
+      display: block;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 143%;
+      color: #969696;
+    }
+  }
+}
+.links {
+  &--desk {
+    @include vp-768 {
+      display: none !important;
+    }
+  }
+  &--mobile {
+    display: none;
+    @include vp-768 {
+      display: flex;
+      margin-top: -10px;
+      gap: 22px;
     }
   }
 }

@@ -9,7 +9,10 @@
   font-weight: 400;
   color: #fff;
   position: relative;
-
+  @include vp-500() {
+    width: 100%;
+    text-align: center;
+  }
   &:nth-child(1) {
     padding-right: 28px;
     border-radius: 4px 0px 0px 4px;
@@ -43,13 +46,16 @@
 
 .tab-content {
   padding-top: 30px;
-  max-width: 1300px;
+  max-width: 1290px;
   margin: 0 auto;
   &-nav {
     display: flex;
     align-items: center;
     padding: 0 32.5px;
     gap: 50px;
+    @include vp-768 {
+      display: none;
+    }
     div {
       a {
         color: var(--color-dark-grey);
@@ -70,16 +76,32 @@
     display: flex;
     flex-direction: column;
     gap: 50px;
+    @include vp-768 {
+      padding: 0 20px 60px;
+      background: none;
+    }
   }
   &-info {
-    display: grid;
-    grid-template-columns: 700px 400px;
+    display: flex;
     justify-content: space-between;
+    gap: 170px;
+    @include vp-1280 {
+      gap: 40px;
+    }
+    @include vp-1024 {
+      flex-direction: column;
+      gap: 60px;
+    }
+    // grid-template-columns: 700px 400px;
+    // justify-content: space-between;
+    // grid-template-columns: 1.75fr 1fr;
   }
+
   &-news {
     display: flex;
     flex-direction: column;
     gap: 40px;
+    width: 100%;
     .news-title {
       display: flex;
       justify-content: space-between;
@@ -99,11 +121,18 @@
     .news-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      grid-gap: 30px;
+      gap: 30px;
+      @include vp-500() {
+        gap: 30px;
+        grid-template-columns: 1fr;
+      }
       &-item {
         display: flex;
         flex-direction: column;
         gap: 20px;
+        @include vp-500() {
+          gap: 10px;
+        }
         &-title {
           color: var(--color-green);
           font-weight: 700;
@@ -124,6 +153,12 @@
     }
   }
   &-slider {
+    max-width: 400px;
+    width: 100%;
+    flex-shrink: 0;
+    @include vp-1024 {
+      max-width: 100%;
+    }
     .news-slider {
       &-content {
         background-color: var(--color-green);
@@ -134,11 +169,23 @@
         display: flex;
         flex-direction: column;
         gap: 30px;
+        @include vp-500() {
+          padding: 30px 20px 80px;
+          background: linear-gradient(
+            136deg,
+            #048105 0%,
+            rgba(4, 129, 5, 0.72) 100%
+          );
+        }
       }
       &-title {
         font-size: 36px;
         font-weight: 400;
         color: #fff;
+        @include vp-500() {
+          font-size: 27px;
+          line-height: 120%;
+        }
       }
       &-link {
         a {
@@ -154,6 +201,9 @@
 
       .swiper-pagination {
         bottom: 50px;
+        @include vp-500() {
+          bottom: 30px;
+        }
       }
       .swiper-pagination-bullet {
         background-color: #d9d9d9;
@@ -170,6 +220,9 @@
       gap: 36px;
       display: flex;
       align-items: center;
+      @include vp-500() {
+        margin-top: 30px;
+      }
       .swiper-button-next,
       .swiper-button-prev {
         position: static;
@@ -191,7 +244,17 @@
   &-cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 25px;
+    gap: 25px;
+    @include vp-1024 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @include vp-768 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include vp-500 {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
     &-item {
       position: relative;
       background-color: var(--color-light-grey);
@@ -227,6 +290,17 @@
     justify-content: center;
     align-items: center;
     gap: 70px;
+    @include vp-1024 {
+      height: auto;
+      padding: 30px;
+      box-sizing: border-box;
+    }
+    @include vp-500() {
+      flex-direction: column;
+      padding: 40px 20px;
+      gap: 30px;
+      align-items: flex-start;
+    }
     span {
       color: var(--color-yellow);
       font-weight: 700;
@@ -238,6 +312,12 @@
       color: var(--color-dark-grey);
       position: relative;
       padding-left: 70px;
+      flex-shrink: 0;
+      @include vp-500() {
+        padding-left: 85px;
+        font-size: 18px;
+        line-height: 111%;
+      }
       &::before {
         content: "";
         position: absolute;
@@ -249,6 +329,11 @@
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
+        @include vp-500() {
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+        }
       }
     }
   }

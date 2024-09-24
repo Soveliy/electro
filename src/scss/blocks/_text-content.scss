@@ -11,24 +11,52 @@
     border-radius: 20px;
     float: right;
     margin-left: 50px;
+    @include vp-1024() {
+      float: none;
+      margin: 0 0 20px 0;
+      max-width: 100%;
+      width: 100%;
+      display: block;
+    }
   }
   &__image-left {
     max-width: 400px;
     border-radius: 20px;
     float: left;
     margin-right: 50px;
+    @include vp-1024() {
+      float: none;
+      margin: 0 0 20px 0;
+      max-width: 100%;
+      width: 100%;
+      display: block;
+    }
   }
   &__image-right-big {
     max-width: 500px;
     border-radius: 20px;
     float: right;
     margin-left: 50px;
+    @include vp-1024() {
+      float: none;
+      margin: 0 0 20px 0;
+      max-width: 100%;
+      width: 100%;
+      display: block;
+    }
   }
   &__image-left-big {
     max-width: 500px;
     border-radius: 20px;
     float: left;
     margin-right: 50px;
+    @include vp-1024() {
+      float: none;
+      margin: 0 0 20px 0;
+      max-width: 100%;
+      width: 100%;
+      display: block;
+    }
   }
   .clear {
     display: table;

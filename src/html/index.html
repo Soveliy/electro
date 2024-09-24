@@ -1,457 +1,429 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Главная</title>
-    <link rel="stylesheet" href="./fonts/Frutiger/stylesheet.css" />
 
-    <!-- Link Swiper's CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Главная</title>
+  <link rel="stylesheet" href="./fonts/Frutiger/stylesheet.css" />
 
-    <link rel="stylesheet" href="./css/main.css" />
-  </head>
-  <body>
-    @@include('blocks/header.html')
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-    <div class="main_tabs">
-      <div class="container">
-        <ul class="tabs">
-          <li data-tab-target="#people" class="active tab">Для населения</li>
-          <li data-tab-target="#bussines" class="tab">Бизнесу</li>
-        </ul>
-      </div>
-      <div class="tab-content">
-        <div id="people" data-tab-content class="active">
-          <nav class="tab-content-nav">
-            <div>
-              <a href="#">Онлайн-сервисы</a>
-            </div>
-            <div>
-              <a href="#">Электроснабжение</a>
-            </div>
-            <div>
-              <a href="#">Раскрытие информации</a>
-            </div>
-            <div>
-              <a href="#">О компании</a>
-            </div>
-          </nav>
-          <div class="tab-content-info-wrapper">
-            <div class="tab-content-info">
-              <div class="tab-content-news">
-                <div class="news-title">
-                  <h2>Последние новости</h2>
-                  <a href="#">Все новости</a>
+  <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body class="js-people">
+  @@include('blocks/header.html')
+
+  <div class="main_tabs">
+    <div class="container">
+      <ul class="tabs">
+        <li data-tab-target="#people" class="active tab">Для населения</li>
+        <li data-tab-target="#bussines" class="tab">Бизнесу</li>
+      </ul>
+    </div>
+    <div class="tab-content">
+      <div id="people" data-tab-content class="active">
+        <nav class="tab-content-nav">
+          <div>
+            <a href="#">Онлайн-сервисы</a>
+          </div>
+          <div>
+            <a href="#">Электроснабжение</a>
+          </div>
+          <div>
+            <a href="#">Раскрытие информации</a>
+          </div>
+          <div>
+            <a href="#">О компании</a>
+          </div>
+        </nav>
+        <div class="tab-content-info-wrapper">
+          <div class="tab-content-info">
+            <div class="tab-content-news">
+              <div class="news-title">
+                <h2>Последние новости</h2>
+                <a href="#">Все новости</a>
+              </div>
+              <div class="news-grid">
+                <div class="news-grid-item">
+                  <div class="news-grid-item-title">
+                    Уважаемые потребители!
+                  </div>
+                  <div class="news-grid-item-text">
+                    В связи с аварийным отключением электроэнергии в
+                    клиентских офисах АО "Электросеть" 26.07.2024 г. временно
+                    приостановлен прием населения до устранения неполадок в
+                    сети.
+                  </div>
+                  <div class="news-grid-item-date">26 июля, 13:32</div>
                 </div>
-                <div class="news-grid">
-                  <div class="news-grid-item">
-                    <div class="news-grid-item-title">
-                      Уважаемые потребители!
-                    </div>
-                    <div class="news-grid-item-text">
-                      В связи с аварийным отключением электроэнергии в
-                      клиентских офисах АО "Электросеть" 26.07.2024 г. временно
-                      приостановлен прием населения до устранения неполадок в
-                      сети.
-                    </div>
-                    <div class="news-grid-item-date">26 июля, 13:32</div>
+                <div class="news-grid-item">
+                  <div class="news-grid-item-title">
+                    Уважаемые потребители!
                   </div>
-                  <div class="news-grid-item">
-                    <div class="news-grid-item-title">
-                      Уважаемые потребители!
-                    </div>
-                    <div class="news-grid-item-text">
-                      В связи с аварийным отключением электроэнергии в
-                      клиентских офисах АО "Электросеть" 26.07.2024 г. временно
-                      приостановлен прием населения до устранения неполадок в
-                      сети.
-                    </div>
-                    <div class="news-grid-item-date">26 июля, 13:32</div>
+                  <div class="news-grid-item-text">
+                    В связи с аварийным отключением электроэнергии в
+                    клиентских офисах АО "Электросеть" 26.07.2024 г. временно
+                    приостановлен прием населения до устранения неполадок в
+                    сети.
                   </div>
-                  <div class="news-grid-item">
-                    <div class="news-grid-item-title">
-                      Уважаемые потребители!
-                    </div>
-                    <div class="news-grid-item-text">
-                      В связи с аварийным отключением электроэнергии в
-                      клиентских офисах АО "Электросеть" 26.07.2024 г. временно
-                      приостановлен прием населения до устранения неполадок в
-                      сети.
-                    </div>
-                    <div class="news-grid-item-date">26 июля, 13:32</div>
+                  <div class="news-grid-item-date">26 июля, 13:32</div>
+                </div>
+                <div class="news-grid-item">
+                  <div class="news-grid-item-title">
+                    Уважаемые потребители!
                   </div>
-                  <div class="news-grid-item">
-                    <div class="news-grid-item-title">
-                      Уважаемые потребители!
-                    </div>
-                    <div class="news-grid-item-text">
-                      В связи с аварийным отключением электроэнергии в
-                      клиентских офисах АО "Электросеть" 26.07.2024 г. временно
-                      приостановлен прием населения до устранения неполадок в
-                      сети.
-                    </div>
-                    <div class="news-grid-item-date">26 июля, 13:32</div>
+                  <div class="news-grid-item-text">
+                    В связи с аварийным отключением электроэнергии в
+                    клиентских офисах АО "Электросеть" 26.07.2024 г. временно
+                    приостановлен прием населения до устранения неполадок в
+                    сети.
                   </div>
+                  <div class="news-grid-item-date">26 июля, 13:32</div>
+                </div>
+                <div class="news-grid-item">
+                  <div class="news-grid-item-title">
+                    Уважаемые потребители!
+                  </div>
+                  <div class="news-grid-item-text">
+                    В связи с аварийным отключением электроэнергии в
+                    клиентских офисах АО "Электросеть" 26.07.2024 г. временно
+                    приостановлен прием населения до устранения неполадок в
+                    сети.
+                  </div>
+                  <div class="news-grid-item-date">26 июля, 13:32</div>
                 </div>
               </div>
-              <div class="tab-content-slider">
-                <div class="swiper news-slider">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <div class="news-slider-content">
-                        <div class="news-slider-title">
-                          Сроки оплаты и передачи показаний
-                        </div>
-                        <div class="news-slider-link">
-                          <a href="#">Подробнее</a>
-                        </div>
+            </div>
+            <div class="tab-content-slider">
+              <div class="swiper news-slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="news-slider-content">
+                      <div class="news-slider-title">
+                        Сроки оплаты и передачи показаний
                       </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="news-slider-content">
-                        <div class="news-slider-title">
-                          Сроки оплаты и передачи показаний
-                        </div>
-                        <div class="news-slider-link">
-                          <a href="#">Подробнее</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="news-slider-content">
-                        <div class="news-slider-title">
-                          Сроки оплаты и передачи показаний
-                        </div>
-                        <div class="news-slider-link">
-                          <a href="#">Подробнее</a>
-                        </div>
+                      <div class="news-slider-link">
+                        <a href="#">Подробнее</a>
                       </div>
                     </div>
                   </div>
-                  <div class="swiper-pagination"></div>
-                </div>
-                <div class="slider-nav">
-                  <div class="swiper-button-prev">
-                    <svg
-                      width="33"
-                      height="16"
-                      viewBox="0 0 33 16"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M0.292892 7.2929C-0.0976296 7.68342 -0.0976295 8.31659 0.292893 8.70711L6.65686 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928934C7.68054 0.53841 7.04738 0.53841 6.65685 0.928934L0.292892 7.2929ZM33 7L1 7L1 9L33 9L33 7Z"
-                        fill="#C2C2C2"
-                      />
-                    </svg>
+                  <div class="swiper-slide">
+                    <div class="news-slider-content">
+                      <div class="news-slider-title">
+                        Сроки оплаты и передачи показаний
+                      </div>
+                      <div class="news-slider-link">
+                        <a href="#">Подробнее</a>
+                      </div>
+                    </div>
                   </div>
-                  <div class="swiper-button-next">
-                    <svg
-                      width="33"
-                      height="16"
-                      viewBox="0 0 33 16"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M32.7071 7.2929C33.0976 7.68342 33.0976 8.31659 32.7071 8.70711L26.3431 15.0711C25.9526 15.4616 25.3195 15.4616 24.9289 15.0711C24.5384 14.6805 24.5384 14.0474 24.9289 13.6569L30.5858 8L24.9289 2.34315C24.5384 1.95262 24.5384 1.31946 24.9289 0.928934C25.3195 0.53841 25.9526 0.53841 26.3431 0.928934L32.7071 7.2929ZM8.74228e-08 7L32 7L32 9L-8.74228e-08 9L8.74228e-08 7Z"
-                        fill="#FDA31B"
-                      />
-                    </svg>
+                  <div class="swiper-slide">
+                    <div class="news-slider-content">
+                      <div class="news-slider-title">
+                        Сроки оплаты и передачи показаний
+                      </div>
+                      <div class="news-slider-link">
+                        <a href="#">Подробнее</a>
+                      </div>
+                    </div>
                   </div>
                 </div>
+                <div class="swiper-pagination"></div>
               </div>
-            </div>
-            <div class="tab-content-cards">
-              <div class="tab-content-cards-item">
-                <span>Данные лицевого счета</span>
-                <a href="#">ПЕРЕЙТИ</a>
-                <div class="icon">
-                  <img src="img/icon/1.svg" alt="" />
+              <div class="slider-nav">
+                <div class="swiper-button-prev">
+                  <svg width="33" height="16" viewBox="0 0 33 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M0.292892 7.2929C-0.0976296 7.68342 -0.0976295 8.31659 0.292893 8.70711L6.65686 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928934C7.68054 0.53841 7.04738 0.53841 6.65685 0.928934L0.292892 7.2929ZM33 7L1 7L1 9L33 9L33 7Z"
+                      fill="#C2C2C2" />
+                  </svg>
+                </div>
+                <div class="swiper-button-next">
+                  <svg width="33" height="16" viewBox="0 0 33 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M32.7071 7.2929C33.0976 7.68342 33.0976 8.31659 32.7071 8.70711L26.3431 15.0711C25.9526 15.4616 25.3195 15.4616 24.9289 15.0711C24.5384 14.6805 24.5384 14.0474 24.9289 13.6569L30.5858 8L24.9289 2.34315C24.5384 1.95262 24.5384 1.31946 24.9289 0.928934C25.3195 0.53841 25.9526 0.53841 26.3431 0.928934L32.7071 7.2929ZM8.74228e-08 7L32 7L32 9L-8.74228e-08 9L8.74228e-08 7Z"
+                      fill="#FDA31B" />
+                  </svg>
                 </div>
               </div>
-              <div class="tab-content-cards-item">
-                <span>Оплата онлайн</span>
-                <a href="#">ПЕРЕЙТИ</a>
-                <div class="icon">
-                  <img src="img/icon/2.svg" alt="" />
-                </div>
-              </div>
-              <div class="tab-content-cards-item">
-                <span>Передача показаний</span>
-                <a href="#">ПЕРЕЙТИ</a>
-                <div class="icon">
-                  <img src="img/icon/3.svg" alt="" />
-                </div>
-              </div>
-              <div class="tab-content-cards-item">
-                <span>Прибор учета</span>
-                <a href="#">ПЕРЕЙТИ</a>
-                <div class="icon">
-                  <img src="img/icon/4.svg" alt="" />
-                </div>
-              </div>
-              <div class="tab-content-cards-item">
-                <span>Запись на прием</span>
-                <a href="#">ПЕРЕЙТИ</a>
-                <div class="icon">
-                  <img src="img/icon/5.svg" alt="" />
-                </div>
-              </div>
-              <div class="tab-content-cards-item">
-                <span>Тарифы и нормативы</span>
-                <a href="#">ПЕРЕЙТИ</a>
-                <div class="icon">
-                  <img src="img/icon/6.svg" alt="" />
-                </div>
-              </div>
-              <div class="tab-content-cards-item">
-                <span>Калькулятор</span>
-                <a href="#">ПЕРЕЙТИ</a>
-                <div class="icon">
-                  <img src="img/icon/7.svg" alt="" />
-                </div>
-              </div>
-              <div class="tab-content-cards-item">
-                <span>График отключений</span>
-                <a href="#">ПЕРЕЙТИ</a>
-                <div class="icon">
-                  <img src="img/icon/8.svg" alt="" />
-                </div>
-              </div>
-            </div>
-            <div class="tab-content-banner">
-              <span>Остались вопросы? Напишите нам.</span>
-              <a href="#"> Интернет-приемная </a>
             </div>
           </div>
+          <div class="tab-content-cards">
+            <div class="tab-content-cards-item">
+              <span>Данные лицевого счета</span>
+              <a href="#">ПЕРЕЙТИ</a>
+              <div class="icon">
+                <img src="img/icon/1.svg" alt="" />
+              </div>
+            </div>
+            <div class="tab-content-cards-item">
+              <span>Оплата онлайн</span>
+              <a href="#">ПЕРЕЙТИ</a>
+              <div class="icon">
+                <img src="img/icon/2.svg" alt="" />
+              </div>
+            </div>
+            <div class="tab-content-cards-item">
+              <span>Передача показаний</span>
+              <a href="#">ПЕРЕЙТИ</a>
+              <div class="icon">
+                <img src="img/icon/3.svg" alt="" />
+              </div>
+            </div>
+            <div class="tab-content-cards-item">
+              <span>Прибор учета</span>
+              <a href="#">ПЕРЕЙТИ</a>
+              <div class="icon">
+                <img src="img/icon/4.svg" alt="" />
+              </div>
+            </div>
+            <div class="tab-content-cards-item">
+              <span>Запись на прием</span>
+              <a href="#">ПЕРЕЙТИ</a>
+              <div class="icon">
+                <img src="img/icon/5.svg" alt="" />
+              </div>
+            </div>
+            <div class="tab-content-cards-item">
+              <span>Тарифы и нормативы</span>
+              <a href="#">ПЕРЕЙТИ</a>
+              <div class="icon">
+                <img src="img/icon/6.svg" alt="" />
+              </div>
+            </div>
+            <div class="tab-content-cards-item">
+              <span>Калькулятор</span>
+              <a href="#">ПЕРЕЙТИ</a>
+              <div class="icon">
+                <img src="img/icon/7.svg" alt="" />
+              </div>
+            </div>
+            <div class="tab-content-cards-item">
+              <span>График отключений</span>
+              <a href="#">ПЕРЕЙТИ</a>
+              <div class="icon">
+                <img src="img/icon/8.svg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="tab-content-banner">
+            <span>Остались вопросы? Напишите нам.</span>
+            <a href="#"> Интернет-приемная </a>
+          </div>
         </div>
-        <div id="bussines" data-tab-content>
-          <nav class="tab-content-nav">
-            <div>
-              <a href="#">Онлайн-сервисы</a>
-            </div>
-            <div>
-              <a href="#">Договор</a>
-            </div>
-            <div>
-              <a href="#">Расчеты</a>
-            </div>
-            <div>
-              <a href="#">Оплата</a>
-            </div>
-            <div>
-              <a href="#">Учет</a>
-            </div>
-            <div>
-              <a href="#">Раскрытие информации</a>
-            </div>
-            <div>
-              <a href="#">О компании</a>
-            </div>
-          </nav>
-          <div class="tab-content-info-wrapper">
-            <div class="tab-content-info">
-              <div class="tab-content-news">
-                <div class="news-title">
-                  <h2>Последние новости</h2>
-                  <a href="#">Все новости</a>
+      </div>
+      <div id="bussines" data-tab-content>
+        <nav class="tab-content-nav">
+          <div>
+            <a href="#">Онлайн-сервисы</a>
+          </div>
+          <div>
+            <a href="#">Договор</a>
+          </div>
+          <div>
+            <a href="#">Расчеты</a>
+          </div>
+          <div>
+            <a href="#">Оплата</a>
+          </div>
+          <div>
+            <a href="#">Учет</a>
+          </div>
+          <div>
+            <a href="#">Раскрытие информации</a>
+          </div>
+          <div>
+            <a href="#">О компании</a>
+          </div>
+        </nav>
+        <div class="tab-content-info-wrapper">
+          <div class="tab-content-info">
+            <div class="tab-content-news">
+              <div class="news-title">
+                <h2>Последние новости</h2>
+                <a href="#">Все новости</a>
+              </div>
+              <div class="news-grid">
+                <div class="news-grid-item">
+                  <div class="news-grid-item-title">
+                    Уважаемые потребители!
+                  </div>
+                  <div class="news-grid-item-text">
+                    В связи с аварийным отключением электроэнергии в
+                    клиентских офисах АО "Электросеть" 26.07.2024 г. временно
+                    приостановлен прием населения до устранения неполадок в
+                    сети.
+                  </div>
+                  <div class="news-grid-item-date">26 июля, 13:32</div>
                 </div>
-                <div class="news-grid">
-                  <div class="news-grid-item">
-                    <div class="news-grid-item-title">
-                      Уважаемые потребители!
-                    </div>
-                    <div class="news-grid-item-text">
-                      В связи с аварийным отключением электроэнергии в
-                      клиентских офисах АО "Электросеть" 26.07.2024 г. временно
-                      приостановлен прием населения до устранения неполадок в
-                      сети.
-                    </div>
-                    <div class="news-grid-item-date">26 июля, 13:32</div>
+                <div class="news-grid-item">
+                  <div class="news-grid-item-title">
+                    Уважаемые потребители!
                   </div>
-                  <div class="news-grid-item">
-                    <div class="news-grid-item-title">
-                      Уважаемые потребители!
-                    </div>
-                    <div class="news-grid-item-text">
-                      В связи с аварийным отключением электроэнергии в
-                      клиентских офисах АО "Электросеть" 26.07.2024 г. временно
-                      приостановлен прием населения до устранения неполадок в
-                      сети.
-                    </div>
-                    <div class="news-grid-item-date">26 июля, 13:32</div>
+                  <div class="news-grid-item-text">
+                    В связи с аварийным отключением электроэнергии в
+                    клиентских офисах АО "Электросеть" 26.07.2024 г. временно
+                    приостановлен прием населения до устранения неполадок в
+                    сети.
                   </div>
-                  <div class="news-grid-item">
-                    <div class="news-grid-item-title">
-                      Уважаемые потребители!
-                    </div>
-                    <div class="news-grid-item-text">
-                      В связи с аварийным отключением электроэнергии в
-                      клиентских офисах АО "Электросеть" 26.07.2024 г. временно
-                      приостановлен прием населения до устранения неполадок в
-                      сети.
-                    </div>
-                    <div class="news-grid-item-date">26 июля, 13:32</div>
+                  <div class="news-grid-item-date">26 июля, 13:32</div>
+                </div>
+                <div class="news-grid-item">
+                  <div class="news-grid-item-title">
+                    Уважаемые потребители!
                   </div>
-                  <div class="news-grid-item">
-                    <div class="news-grid-item-title">
-                      Уважаемые потребители!
-                    </div>
-                    <div class="news-grid-item-text">
-                      В связи с аварийным отключением электроэнергии в
-                      клиентских офисах АО "Электросеть" 26.07.2024 г. временно
-                      приостановлен прием населения до устранения неполадок в
-                      сети.
-                    </div>
-                    <div class="news-grid-item-date">26 июля, 13:32</div>
+                  <div class="news-grid-item-text">
+                    В связи с аварийным отключением электроэнергии в
+                    клиентских офисах АО "Электросеть" 26.07.2024 г. временно
+                    приостановлен прием населения до устранения неполадок в
+                    сети.
                   </div>
+                  <div class="news-grid-item-date">26 июля, 13:32</div>
+                </div>
+                <div class="news-grid-item">
+                  <div class="news-grid-item-title">
+                    Уважаемые потребители!
+                  </div>
+                  <div class="news-grid-item-text">
+                    В связи с аварийным отключением электроэнергии в
+                    клиентских офисах АО "Электросеть" 26.07.2024 г. временно
+                    приостановлен прием населения до устранения неполадок в
+                    сети.
+                  </div>
+                  <div class="news-grid-item-date">26 июля, 13:32</div>
                 </div>
               </div>
-              <div class="tab-content-slider">
-                <div class="swiper news-slider">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <div class="news-slider-content">
-                        <div class="news-slider-title">
-                          Сроки оплаты и передачи показаний
-                        </div>
-                        <div class="news-slider-link">
-                          <a href="#">Подробнее</a>
-                        </div>
+            </div>
+            <div class="tab-content-slider">
+              <div class="swiper news-slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="news-slider-content">
+                      <div class="news-slider-title">
+                        Сроки оплаты и передачи показаний
                       </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="news-slider-content">
-                        <div class="news-slider-title">
-                          Сроки оплаты и передачи показаний
-                        </div>
-                        <div class="news-slider-link">
-                          <a href="#">Подробнее</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="news-slider-content">
-                        <div class="news-slider-title">
-                          Сроки оплаты и передачи показаний
-                        </div>
-                        <div class="news-slider-link">
-                          <a href="#">Подробнее</a>
-                        </div>
+                      <div class="news-slider-link">
+                        <a href="#">Подробнее</a>
                       </div>
                     </div>
                   </div>
-                  <div class="swiper-pagination"></div>
-                </div>
-                <div class="slider-nav">
-                  <div class="swiper-button-prev">
-                    <svg
-                      width="33"
-                      height="16"
-                      viewBox="0 0 33 16"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M0.292892 7.2929C-0.0976296 7.68342 -0.0976295 8.31659 0.292893 8.70711L6.65686 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928934C7.68054 0.53841 7.04738 0.53841 6.65685 0.928934L0.292892 7.2929ZM33 7L1 7L1 9L33 9L33 7Z"
-                        fill="#C2C2C2"
-                      />
-                    </svg>
+                  <div class="swiper-slide">
+                    <div class="news-slider-content">
+                      <div class="news-slider-title">
+                        Сроки оплаты и передачи показаний
+                      </div>
+                      <div class="news-slider-link">
+                        <a href="#">Подробнее</a>
+                      </div>
+                    </div>
                   </div>
-                  <div class="swiper-button-next">
-                    <svg
-                      width="33"
-                      height="16"
-                      viewBox="0 0 33 16"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M32.7071 7.2929C33.0976 7.68342 33.0976 8.31659 32.7071 8.70711L26.3431 15.0711C25.9526 15.4616 25.3195 15.4616 24.9289 15.0711C24.5384 14.6805 24.5384 14.0474 24.9289 13.6569L30.5858 8L24.9289 2.34315C24.5384 1.95262 24.5384 1.31946 24.9289 0.928934C25.3195 0.53841 25.9526 0.53841 26.3431 0.928934L32.7071 7.2929ZM8.74228e-08 7L32 7L32 9L-8.74228e-08 9L8.74228e-08 7Z"
-                        fill="#FDA31B"
-                      />
-                    </svg>
+                  <div class="swiper-slide">
+                    <div class="news-slider-content">
+                      <div class="news-slider-title">
+                        Сроки оплаты и передачи показаний
+                      </div>
+                      <div class="news-slider-link">
+                        <a href="#">Подробнее</a>
+                      </div>
+                    </div>
                   </div>
                 </div>
+                <div class="swiper-pagination"></div>
               </div>
-            </div>
-            <div class="tab-content-cards">
-              <div class="tab-content-cards-item">
-                <span>Заключение договора</span>
-                <a href="#">ПЕРЕЙТИ</a>
-                <div class="icon">
-                  <img src="img/icon/9.svg" alt="" />
+              <div class="slider-nav">
+                <div class="swiper-button-prev">
+                  <svg width="33" height="16" viewBox="0 0 33 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M0.292892 7.2929C-0.0976296 7.68342 -0.0976295 8.31659 0.292893 8.70711L6.65686 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928934C7.68054 0.53841 7.04738 0.53841 6.65685 0.928934L0.292892 7.2929ZM33 7L1 7L1 9L33 9L33 7Z"
+                      fill="#C2C2C2" />
+                  </svg>
                 </div>
-              </div>
-              <div class="tab-content-cards-item">
-                <span>Оплата онлайн</span>
-                <a href="#">ПЕРЕЙТИ</a>
-                <div class="icon">
-                  <img src="img/icon/2.svg" alt="" />
-                </div>
-              </div>
-              <div class="tab-content-cards-item">
-                <span>Передача показаний</span>
-                <a href="#">ПЕРЕЙТИ</a>
-                <div class="icon">
-                  <img src="img/icon/3.svg" alt="" />
-                </div>
-              </div>
-              <div class="tab-content-cards-item">
-                <span>Прибор учета</span>
-                <a href="#">ПЕРЕЙТИ</a>
-                <div class="icon">
-                  <img src="img/icon/4.svg" alt="" />
-                </div>
-              </div>
-              <div class="tab-content-cards-item">
-                <span>Запись на прием</span>
-                <a href="#">ПЕРЕЙТИ</a>
-                <div class="icon">
-                  <img src="img/icon/5.svg" alt="" />
-                </div>
-              </div>
-              <div class="tab-content-cards-item">
-                <span>Тарифы и нормативы</span>
-                <a href="#">ПЕРЕЙТИ</a>
-                <div class="icon">
-                  <img src="img/icon/6.svg" alt="" />
-                </div>
-              </div>
-              <div class="tab-content-cards-item">
-                <span>Калькулятор</span>
-                <a href="#">ПЕРЕЙТИ</a>
-                <div class="icon">
-                  <img src="img/icon/7.svg" alt="" />
-                </div>
-              </div>
-              <div class="tab-content-cards-item">
-                <span>График отключений</span>
-                <a href="#">ПЕРЕЙТИ</a>
-                <div class="icon">
-                  <img src="img/icon/8.svg" alt="" />
+                <div class="swiper-button-next">
+                  <svg width="33" height="16" viewBox="0 0 33 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M32.7071 7.2929C33.0976 7.68342 33.0976 8.31659 32.7071 8.70711L26.3431 15.0711C25.9526 15.4616 25.3195 15.4616 24.9289 15.0711C24.5384 14.6805 24.5384 14.0474 24.9289 13.6569L30.5858 8L24.9289 2.34315C24.5384 1.95262 24.5384 1.31946 24.9289 0.928934C25.3195 0.53841 25.9526 0.53841 26.3431 0.928934L32.7071 7.2929ZM8.74228e-08 7L32 7L32 9L-8.74228e-08 9L8.74228e-08 7Z"
+                      fill="#FDA31B" />
+                  </svg>
                 </div>
               </div>
             </div>
-            <div class="tab-content-banner">
-              <span>Остались вопросы? Напишите нам.</span>
-              <a href="#"> Интернет-приемная </a>
+          </div>
+          <div class="tab-content-cards">
+            <div class="tab-content-cards-item">
+              <span>Заключение договора</span>
+              <a href="#">ПЕРЕЙТИ</a>
+              <div class="icon">
+                <img src="img/icon/9.svg" alt="" />
+              </div>
             </div>
+            <div class="tab-content-cards-item">
+              <span>Оплата онлайн</span>
+              <a href="#">ПЕРЕЙТИ</a>
+              <div class="icon">
+                <img src="img/icon/2.svg" alt="" />
+              </div>
+            </div>
+            <div class="tab-content-cards-item">
+              <span>Передача показаний</span>
+              <a href="#">ПЕРЕЙТИ</a>
+              <div class="icon">
+                <img src="img/icon/3.svg" alt="" />
+              </div>
+            </div>
+            <div class="tab-content-cards-item">
+              <span>Прибор учета</span>
+              <a href="#">ПЕРЕЙТИ</a>
+              <div class="icon">
+                <img src="img/icon/4.svg" alt="" />
+              </div>
+            </div>
+            <div class="tab-content-cards-item">
+              <span>Запись на прием</span>
+              <a href="#">ПЕРЕЙТИ</a>
+              <div class="icon">
+                <img src="img/icon/5.svg" alt="" />
+              </div>
+            </div>
+            <div class="tab-content-cards-item">
+              <span>Тарифы и нормативы</span>
+              <a href="#">ПЕРЕЙТИ</a>
+              <div class="icon">
+                <img src="img/icon/6.svg" alt="" />
+              </div>
+            </div>
+            <div class="tab-content-cards-item">
+              <span>Калькулятор</span>
+              <a href="#">ПЕРЕЙТИ</a>
+              <div class="icon">
+                <img src="img/icon/7.svg" alt="" />
+              </div>
+            </div>
+            <div class="tab-content-cards-item">
+              <span>График отключений</span>
+              <a href="#">ПЕРЕЙТИ</a>
+              <div class="icon">
+                <img src="img/icon/8.svg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="tab-content-banner">
+            <span>Остались вопросы? Напишите нам.</span>
+            <a href="#"> Интернет-приемная </a>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    @@include('blocks/footer.html')
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  @@include('blocks/footer.html')
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <script src="./js/index.bundle.js"></script>
-  </body>
+  <script src="./js/index.bundle.js"></script>
+</body>
+
 </html>

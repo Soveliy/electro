@@ -1,0 +1,45 @@
+.files {
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    @include vp-1024() {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+    @include vp-500() {
+      grid-template-columns: 1fr;
+    }
+  }
+  &-item {
+    display: flex;
+    align-content: flex-start;
+    padding: 20px;
+    box-sizing: border-box;
+    background: #ebebec;
+    border-radius: 10px;
+    &__icon {
+      padding-top: 2px;
+      width: 40px;
+      height: 40px;
+      flex-shrink: 0;
+      margin-right: 20px;
+      img {
+        max-width: 100%;
+      }
+    }
+    &__title {
+      margin-bottom: 15px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 130%;
+    }
+    &__link {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 130%;
+      text-transform: uppercase;
+      color: #fba119;
+    }
+  }
+}

@@ -9,6 +9,7 @@
   &__slider {
     padding: 20px 20px 24px;
     background: #ebebec;
+    border-radius: 10px;
     .swiper-scrollbar {
       bottom: 0;
       left: 20px;
@@ -31,6 +32,9 @@
     cursor: pointer;
     &.active {
       color: #028103;
+    }
+    @include vp-500() {
+      font-size: 24px;
     }
     @include hover {
       color: #028103;

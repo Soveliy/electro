@@ -10,6 +10,10 @@
     line-height: 110%;
     color: #028103;
     transition: 0.3s;
+    svg {
+      margin-top: -1px;
+      fill: #028103;
+    }
     @include hover {
       opacity: 0.8;
       svg {
